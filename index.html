@@ -8,38 +8,53 @@
     <title>Rippler</title>
     <!--style------------------>
 </head>
+
 <body>
     <div class="rippler">
     </div>
     <h1 class="title">Rippler Practice</h1>
 
     <style>
-        body{
-            background-color:midnightblue;
+        body {
+            background-color: midnightblue;
         }
-        .rippler{
-            background-image:url(rippler__img.jpg);
+
+        .rippler {
+            background-image: url(rippler__img.jpg);
             background-position: center;
             background-size: cover;
-            width:100%;
-            height:calc(250 / 375 * 100vw);
-            margin-top:30px;
+            width: 100%;
+            height: calc(250 / 375 * 100vw);
+            margin-top: 30px;
         }
-        .title{
+
+        .title {
             text-align: center;
-            font-size:20px;
+            font-size: 20px;
             letter-spacing: 0.2em;
-            color:#f3f3f3;
+            color: #f3f3f3;
         }
-        @media(min-width:768px){
-            .rippler{
-                width:min(100%,1080px);
-                height:80vh;
-                margin:30px auto 0;
+
+        @media(min-width:768px) {
+            .rippler {
+                width: min(100%, 1080px);
+                height: 80vh;
+                margin: 30px auto 0;
             }
         }
-        
-        
     </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.ripples-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.rippler').ripples({
+                resolution: 400,
+                dropRadius: 30,
+                perturbance: 0.02
+            });
+        });
+    </script>
 </body>
+
 </html>
