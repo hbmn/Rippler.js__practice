@@ -1,4 +1,4 @@
-# Ripples.js__practice
+# Ripples.js_practice
 
 jQueryのライブラリ"Ripples.js"の練習サンプル。
 background-imageの画像をマウスオーバーすると波紋エフェクトがかかります。
